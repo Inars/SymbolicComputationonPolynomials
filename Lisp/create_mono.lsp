@@ -1,0 +1,6 @@
+(defun create_mono (n d)
+	(if (< d 0) 
+		(return-from create_mono '()) 
+		(return-from create_mono (append (zeros d) (list n)))
+	)
+)

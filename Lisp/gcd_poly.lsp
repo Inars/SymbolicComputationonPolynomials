@@ -1,0 +1,6 @@
+(defun gcd_poly (X Y)
+	(if (eq (reduc_poly Y) '())
+		(return-from gcd_poly (scalarDiv (leading_coeff X) X))
+		(return-from gcd_poly (gcd_poly Y (nth 1 (div_poly X Y)) ) )
+	)
+)

@@ -1,0 +1,6 @@
+(defun zeros (d)
+	( if (= d 0)
+		(return-from zeros '()) 
+		(return-from zeros (cons 0 (zeros (- d 1) ) ))
+	)
+)

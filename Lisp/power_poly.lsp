@@ -1,0 +1,6 @@
+(defun power_poly (P n)
+	(if (= n 0)
+		(return-from power_poly '(1))
+		(return-from power_poly (mul_poly P (power_poly P (- n 1))))
+	)
+)
